@@ -1,5 +1,5 @@
 {
-    "name": "virtuecenter/upload",
+    "name": "virtuecenter/uploadwrapper",
     "type": "library",
     "description": "Wrapper for codeguy upload",
     "keywords": ["upload"],
