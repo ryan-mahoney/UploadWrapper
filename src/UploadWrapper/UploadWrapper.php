@@ -9,7 +9,11 @@ class UploadWrapper {
 	}
 
 	public function storage ($path) {
-		return new \Upload\Storage\FileSystem($this->root . $path);
+		$path = $this->root . $path;
+		if (!file_exists($path)) {
+			mkdir ($path, 0777, true);
+		}
+		return new \Upload\Storage\FileSystem($path, true);
 	}
 
 	public function file ($field, $storage) {
