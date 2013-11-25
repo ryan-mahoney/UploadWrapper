@@ -17,6 +17,6 @@
         "codeguy/upload": "dev-master"
     },
     "autoload": {
-        "psr-0": {"Manager": "src/"}
+        "psr-0": {"UploadWrapper": "src/"}
     }
 }
