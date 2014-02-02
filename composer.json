@@ -1,14 +1,14 @@
 {
-    "name": "virtuecenter/uploadwrapper",
+    "name": "opine/uploadwrapper",
     "type": "library",
-    "description": "Wrapper for codeguy upload",
+    "description": "Wrapper for CodeGuy's upload class to make it more DI friendly",
     "keywords": ["upload"],
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Mahoney",
             "email": "ryan@virtuecenter.com",
-            "homepage": "http://www.virtuecenter.com",
+            "homepage": "http://opine-php.org",
             "role": "Developer"
         }
     ],
@@ -17,6 +17,6 @@
         "codeguy/upload": "dev-master"
     },
     "autoload": {
-        "psr-0": {"UploadWrapper": "src/"}
+        "psr-4": {"Opine\\": "src/"}
     }
 }
