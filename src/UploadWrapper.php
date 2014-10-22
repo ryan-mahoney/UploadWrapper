@@ -23,6 +23,8 @@
  * THE SOFTWARE.
  */
 namespace Opine;
+use Upload\Storage\FileSystem;
+use Upload\File;
 
 class UploadWrapper {
     private $root;
@@ -36,10 +38,10 @@ class UploadWrapper {
         if (!file_exists($path)) {
             mkdir ($path, 0777, true);
         }
-        return new \Upload\Storage\FileSystem($path, true);
+        return new FileSystem($path, true);
     }
 
     public function file ($field, $storage) {
-        return new \Upload\File($field, $storage);
+        return new File($field, $storage);
     }
 }
