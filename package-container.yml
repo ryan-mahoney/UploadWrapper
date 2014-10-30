@@ -1,0 +1,4 @@
+services:
+    uploadwrapper:
+        class:     'Opine\UploadWrapper'
+        arguments: ['%root%']
