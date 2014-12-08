@@ -1,15 +1,11 @@
 <?php
 namespace Opine;
 
-class UploadWrapperTest extends \PHPUnit_Framework_TestCase {
-    private $db;
+use PHPUnit_Framework_TestCase;
 
-    public function setup () {
-        date_default_timezone_set('UTC');
-        $root = __DIR__;
-        $container = new Container($root, $root . '/container.yml');
-        $this->db = $container->db;
-    }
+class UploadWrapperTest extends PHPUnit_Framework_TestCase {
+
+    public function setup () {}
 
     public function testSample () {
         $this->assertTrue(true);
